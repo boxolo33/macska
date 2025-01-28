@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.pizza-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #ffcc99; /* Pizza alap */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.pizza {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.ingredient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none; /* Rejtve kezdenek az összetevők */
+}
+
+#cheese {
+    background-color: rgba(255, 223, 0, 0.7); /* Sárga sajt */
+}
+
+#pepperoni {
+    background-color: rgba(255, 0, 0, 0.7); /* Piros pepperoni */
+}
+
+#mushrooms {
+    background-color: rgba(139, 69, 19, 0.7); /* Barna gomba */
+}
+
+#salami {
+    background-color: rgba(255, 99, 71, 0.7); /* Piros szalami */
+}
+
+#cucumber {
+    background-color: rgba(0, 255, 0, 0.5); /* Zöld uborka */
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ff6666;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+.ingredient-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; /* Kép mérete */
+    display: none; /* Rejtve kezdenek az összetevők */
+}
+
+.show-image {
+    display: block; /* Megjelenítés */
+}
+
+.show {
+    display: block; /* Megjelenítés az összetevők számára */
+}

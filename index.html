@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Színváltó Weboldal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pizza Interaktív Weboldal</h1>
+    
+    <div class="pizza-container">
+        <div class="pizza" id="pizzaBase"></div>
+        <div class="ingredient" id="cheese"></div>
+        <div class="ingredient" id="pepperoni"></div>
+        <div class="ingredient" id="mushrooms"></div>
+        <div class="ingredient" id="salami"></div>
+        <div class="ingredient" id="cucumber"></div>
+        
+        <!-- Képek -->
+        <img id="cheeseImage" class="ingredient-image" src="cheese.png" alt="Sajt" style="display:none;">
+        <img id="pepperoniImage" class="ingredient-image" src="pepperoni.png" alt="Pepperoni" style="display:none;">
+        <img id="mushroomImage" class="ingredient-image" src="mushroom.png" alt="Gomba" style="display:none;">
+        <img id="salamiImage" class="ingredient-image" src="salami.png" alt="Szalami" style="display:none;">
+        <img id="cucumberImage" class="ingredient-image" src="cucumber.png" alt="Uborka" style="display:none;">
+    </div>
+    
+    <div class="controls">
+        <button id="cheeseButton">Sajt hozzáadása</button>
+        <button id="pepperoniButton">Pepperoni hozzáadása</button>
+        <button id="mushroomButton">Gomba hozzáadása</button>
+        <button id="salamiButton">Szalami hozzáadása</button>
+        <button id="cucumberButton">Uborka hozzáadása</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
